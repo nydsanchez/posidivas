@@ -31,7 +31,7 @@ body {
 
 /* Hero Section Reutilizable */
 .hero-section {
-  background-image: url("/assets/hero.png");
+  background-image: url("../assets/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +70,7 @@ body {
 
 .btn-posi-primary:hover {
   background-color: var(--posi-pink-dark);
-  
+
   box-shadow: 0 5px 15px rgba(255, 133, 161, 0.4);
 }
 .ico-size {
@@ -93,24 +93,23 @@ body {
   color: var(--posi-pink);
 }
 
-.btn-posi-flex{
-    position: absolute;
-    bottom: 10%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+.btn-posi-flex {
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
 
-.btn-posi-flex-right{
-    position: absolute;
-    bottom: 10%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+.btn-posi-flex-right {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  transform: translate(-50%, -50%);
 }
 
 .color-posi-hero-bg {
   background-color: var(--posi-hero-bg);
 }
-
 
 .u-dflex {
   display: flex;
@@ -136,5 +135,3 @@ body {
     min-height: 25vh;
   }
 }
-
-
