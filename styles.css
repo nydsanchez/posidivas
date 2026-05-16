@@ -30,6 +30,7 @@ body {
   background-color: var(--posi-hero-bg);
 }
 
+.container-block,
 .container {
   padding: 20px;
   margin: 40px;
@@ -46,6 +47,9 @@ body {
   background-color: #e6c3f8;
 }
 
+.container {
+  flex-direction: row;
+}
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -72,7 +76,7 @@ body {
 
 .navbar-nav-secondary li a,
 .navbar-nav-secondary-row li a {
-  font-size: 1rem;
+  font-size: 12px;
   display: inline-block;
   text-align: left;
   color: var(--posi-text-dark) !important;
@@ -198,6 +202,7 @@ body {
 .cards-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: stretch;
 }
@@ -350,12 +355,47 @@ body {
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.15);
   font-family: "Arial Black", "Impact", sans-serif;
 }
+.texto-medium {
+  width: 70%;
+}
+
+/**************  FORM  ********************/
+.input-email {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+.btn-send {
+  background: linear-gradient(
+    25deg,
+    var(--posi-pink-dark),
+    var(--posi-pink-dark)
+  );
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
 /**************  FOOTER  ********************/
+
+footer {
+  margin-bottom: 30px;
+}
+
+footer p {
+  margin-top: 20px;
+}
 .footer-content {
   display: flex;
   gap: 50px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .footer-section {
@@ -375,7 +415,7 @@ body {
   width: 200px;
 }
 .img-logo-footer-s {
-  width: 100px;
+  width: 200px;
 }
 .ico-rrss {
   margin-top: 10px;
@@ -391,7 +431,7 @@ body {
   border-radius: 8px;
 }
 .text-footer {
-  font-size: 1rem;
+  font-size: 14px;
   color: var(--posi-text-dark);
 }
 .sub-column-footer {
@@ -405,6 +445,17 @@ body {
 
 .u-size-s {
   width: 180px;
+}
+.u-txt-left {
+  text-align: left;
+}
+.u-txt-right {
+  text-align: right;
+}
+.u-txt-center {
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
 }
 
 .u-margin-top {
