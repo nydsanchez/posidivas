@@ -1,75 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posi Divas | Principal</title>
 
     <!-- Fuentes -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
     <!-- Estilos Externos -->
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navegación con Menú Hamburguesa -->
-    <nav class="navbar navbar-expand-lg u-dflex">
-        <div class="container">
-            <a class="navbar-brand" href="#"
-                style="font-family:'Montserrat'; color:var(--posi-orange-logo); font-weight:900; text-shadow: 2px 2px 0px #fff; margin-left: 50px;">POSI
-                DIVAS</a>
+    <nav class="navbar">
+      <div>
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/logo2psi.png" alt="Logo" class="img-logo"
+        /></a>
+      </div>
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse u-ml-20" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre el Proyecto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                </ul>
-            </div>
-
-        </div>
-        <div class="u-mr-20 hidden-div">
-            <ul class="navbar-nav ">
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-sistrix ico-size"></i></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-regular fa-circle-user ico-size"></i></a>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping ico-size"></i></a>
-                </li>
-
-            </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre el Proyecto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Campañas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="u-mr-20 hidden-div">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-brands fa-sistrix ico-size"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-regular fa-circle-user ico-size"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fa-solid fa-bag-shopping ico-size"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Contenedor Principal (Hero) -->
-    <div class="container-fluid px-0">
-        <header class="hero-section">
-            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                <button class="btn btn-posi-primary btn-posi-flex">SHOP <i class="fa-regular fa-star"></i></button>
-                <button class="btn btn-posi-outline btn-posi-flex-right">CONOCÉ MÁS <i
-                        class="fa-regular fa-heart"></i></button>
-            </div>
-
-        </header>
+    <div class="hero-section">
+      <div>
+        <img src="./assets/hero.png" alt="hero image" class="hero-image" />
+      </div>
+      <div class="hero-content">
+        <button class="btn-posi-primary">CONOCÉ EL PROYECTO</button>
+      </div>
     </div>
 
-    <!-- Scripts de Bootstrap (Maneja el menú hamburguesa y dropdowns) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+    <div class="section">
+      <div class="card card-1">
+        <h3 class="card-title card-title-pink card-title-right ">Sobre <br />nosotrxs</h3>
+        <p class="card-description">
+          Conocé nuestra historia, misión y equipo.
+        </p>
+        <div class="card-footer">
+          <a href="#" class="card-link u-mr-20">conocer más</a>
+        </div>
+      
+      </div>
+      <div class="card card-2">
+        <h3 class="card-title card-title-pink card-title-right">Campañas</h3>
+        <p class="card-description">
+          Mensajes que rompen el estigma y transforman realidades.
+        </p>
+        <div class="card-footer">
+          <a href="#" class="card-link u-mr-20">Ver campañas</a>
+        </div>
+      
+      </div>
+      <div class="card card-3">
+        <h3 class="card-title card-title-pink card-title-right">Tienda</h3>
+        <p class="card-description">
+          Ropa con actitud y propósito.
+        </p>
+        <div class="card-footer">
+          <a href="#" class="card-link disabled">Próximamente</a>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+        <div class="card-informative">
+           <h2 class="texto-etiqueta-y2k">
+                <span>EL VIH</span>
+                <span>NO NOS DEFINE.</span>
+            </h2>
+            <p class="card-description card-description-informative">
+          Existimos, deseamos, creamos, amamos y resistimos.
+            </p>
+            <div class="card-footer">
+                <P class="card-link u-mr-20">#PositivasYOrgullosas</a>
+            </div>
+            <img src="./assets/corazon rosa.png" alt="adorno corazon" class="adorno-card-informative">
+        </div>
+    </div>
+  </body>
 </html>
