@@ -2,6 +2,7 @@
 :root {
   --posi-pink: #ff85a1;
   --posi-hero-bg: #a46cd7;
+  --posi-hero-bg-hover: #8a5bc2;
   --posi-pink-dark: #f06292;
   --posi-pink-strong: #fd289a;
   --posi-purple-bg: #eacdf8;
@@ -29,15 +30,54 @@ body {
   background-color: var(--posi-hero-bg);
 }
 
+.container {
+  padding: 20px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 15px;
+
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.2));
+  width: 100%;
+  height: auto;
+  background-color: #e6c3f8;
+}
+
 .navbar-nav {
   display: flex;
   align-items: center;
 }
 
-.navbar-nav li {
+.navbar-nav-secondary {
+  display: flex;
+  flex-flow: column;
+}
+
+.navbar-nav-secondary-row {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-nav li,
+.navbar-nav-secondary-row li {
   list-style: none;
 }
 
+.navbar-nav-secondary li {
+  list-style: none;
+}
+
+.navbar-nav-secondary li a,
+.navbar-nav-secondary-row li a {
+  font-size: 1rem;
+  display: inline-block;
+  text-align: left;
+  color: var(--posi-text-dark) !important;
+  text-decoration: none;
+}
 .nav-link {
   font-weight: 600;
   /* text-transform: uppercase; */
@@ -154,18 +194,23 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px;
 }
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: stretch;
+}
+
 .card {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  height: 400px;
+  flex: 1 1 500px;
+  min-height: 400px;
   background-color: #e0b6f5;
   padding: 20px;
   text-align: center;
   transform: scale(0.8);
-  overflow: hidden;
 }
 .card-1 {
   background-image: url("./assets/card1b.png");
@@ -199,13 +244,13 @@ body {
   text-align: left;
 }
 
-
 .card-description {
   margin-top: 35px;
   font-size: 1.2rem;
   width: 70%;
   color: var(--posi-text-dark);
   margin-bottom: 15px;
+  text-align: left;
 }
 .card-description-informative {
   font-family: monospace;
@@ -229,11 +274,18 @@ body {
   box-shadow: 0 5px 15px rgba(255, 133, 161, 0.4);
 }
 
+.card-link-pronto {
+  background-color: var(--posi-hero-bg);
+  text-transform: uppercase;
+}
+.card-link-pronto:hover {
+  background-color: var(--posi-hero-bg-hover);
+  box-shadow: 0 5px 15px rgba(164, 108, 215, 0.4);
+}
+
 .card-footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  justify-content: start;
 }
 .card-image {
   width: 200px;
@@ -247,19 +299,20 @@ body {
   gap: 1rem;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 95%;
-  height: 500px;
+  width: 100%;
+  height: auto;
   background-image: url("./assets/Bloque3A.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 20px;
+  margin: 0 40px;
   position: relative;
 }
 
 .adorno-card-informative {
   position: absolute;
-  top: 100px;
+  top: 15%;
   right: 33%;
   width: 100px;
   height: auto;
@@ -298,10 +351,65 @@ body {
   font-family: "Arial Black", "Impact", sans-serif;
 }
 
+/**************  FOOTER  ********************/
+.footer-content {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  border-right: 1px solid #d3d3d3e5;
+  padding-right: 20px;
+  flex: 1;
+}
+.footer-section-small {
+  flex: 0.5;
+}
+
+.footer-section h4 {
+  text-transform: uppercase;
+}
+
+.img-logo-footer {
+  width: 200px;
+}
+.img-logo-footer-s {
+  width: 100px;
+}
+.ico-rrss {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.info-footer {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: var(--posi-pink-strong);
+  color: white;
+  border-radius: 8px;
+}
+.text-footer {
+  font-size: 1rem;
+  color: var(--posi-text-dark);
+}
+.sub-column-footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/**************  UTILIDADES  ********************/
+
 .u-size-s {
   width: 180px;
 }
 
+.u-margin-top {
+  margin-top: 25px;
+}
 /*MEDIA QUERIES */
 @media (max-width: 680px) {
   .hidden-div {
@@ -310,7 +418,8 @@ body {
   .u-ml-20 {
     margin-left: 0;
   }
-  .hero-section {
+  .hero-section,
+  .card-informative {
     background-size: contain;
     background-color: #a46cd7;
     min-height: 25vh;
